@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Polityka prywatności — Rośliny (eu.iwanus.plants)</title>
+<style>
+ body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;max-width:760px;margin:2rem auto;padding:0 1rem;line-height:1.6;color:#1a1a1a}
+ h1{font-size:1.6rem} h2{font-size:1.15rem;margin-top:2rem} code{background:#f0f0f0;padding:.1rem .3rem;border-radius:4px}
+ .muted{color:#666;font-size:.9rem}
+</style>
+</head>
+<body>
+<h1>Polityka prywatności — Rośliny</h1>
+<p class="muted">Identyfikator aplikacji: <code>eu.iwanus.plants</code> · Ostatnia zmiana: 8 października 2026</p>
+
+<p>Rośliny to narzędzie do przyjmowania towaru w sklepie z roślinami lub szkółce. Właściciel fotografuje paszport roślin i roślinę, wpisuje dane partii, a aplikacja zapisuje je w bazie produktów na <strong>własnym serwerze właściciela</strong>, dostępnym tylko w jego sieci lokalnej lub przez jego VPN. Aplikacja jest przeznaczona do użytku przez operatora sklepu.</p>
+
+<h2>Jakie dane przetwarza aplikacja</h2>
+<ul>
+ <li><strong>Zdjęcia</strong> paszportu roślin i rośliny, zrobione aparatem lub wybrane z galerii przez użytkownika. Są zmniejszane na telefonie i wysyłane na serwer właściciela, gdzie służą do odczytu paszportu, rozpoznania rośliny i jako zdjęcie produktu w sklepie.</li>
+ <li><strong>Dane partii</strong> wpisane przez użytkownika: dostawca, ilość, cena, rozmiar doniczki, wysokość, kod SKU, notatki.</li>
+</ul>
+<p>Dane trafiają wyłącznie na serwer właściciela sklepu. Przetwarzanie (odczyt tekstu, rozpoznanie rośliny, opis) odbywa się na tym serwerze. Do wyszukania opisu rośliny serwer wysyła do publicznych źródeł (GBIF, Wikipedia, wyszukiwarki) <strong>tylko nazwę botaniczną i odmianę</strong> rośliny, nigdy zdjęć ani danych partii. Opublikowane przez właściciela produkty (nazwa, opis, cena, zdjęcie rośliny) mogą być pokazane w jego sklepie internetowym; notatki, dane dostawcy i zdjęcie paszportu nie są publikowane.</p>
+
+<h2>Biblioteka Google ML Kit</h2>
+<p>Do odczytu kodu kreskowego lub QR z paszportu aplikacja używa biblioteki Google ML Kit (model wbudowany w aplikację, analiza odbywa się na telefonie). Zgodnie z <a href="https://developers.google.com/ml-kit/android-data-disclosure">dokumentacją Google</a> ML Kit wysyła do Google dane diagnostyczne: informacje o urządzeniu i aplikacji, identyfikatory, metryki wydajności, konfigurację API i kody błędów. Dane są szyfrowane (HTTPS) i według Google nie są przekazywane stronom trzecim. Zdjęcia nie są wysyłane do Google.</p>
+
+<h2>Czego aplikacja nie robi</h2>
+<p>Brak reklam, analityki dewelopera i śledzenia. Aplikacja nie korzysta z lokalizacji, kontaktów ani konta Google. Nie prosi o uprawnienie do aparatu: zdjęcie robi systemowa aplikacja aparatu, a galeria działa przez systemowy selektor zdjęć.</p>
+
+<h2>Przechowywanie i usuwanie</h2>
+<p>Dane przechowuje serwer właściciela sklepu. Każdy produkt wraz ze zdjęciami można usunąć w aplikacji (Karta produktu → Usuń). Na telefonie aplikacja trzyma tylko tymczasowe pliki zdjęć w pamięci podręcznej; odinstalowanie je usuwa.</p>
+
+<h2>Bezpieczeństwo</h2>
+<p>Połączenie z serwerem jest szyfrowane (HTTPS). Serwer jest dostępny tylko z sieci lokalnej właściciela i jego VPN.</p>
+
+<h2>Dzieci</h2>
+<p>Aplikacja jest narzędziem dla operatora sklepu i nie jest skierowana do dzieci.</p>
+
+<h2>Zmiany</h2>
+<p>Zmieniona wersja polityki zostanie opublikowana pod tym adresem.</p>
+
+<h2>Kontakt</h2>
+<p>JI ENGINEERING — <a href="mailto:engineering@iwanus.eu">engineering@iwanus.eu</a></p>
+
+<hr>
+
+<h1 lang="en">Privacy Policy — Rośliny</h1>
+<p class="muted">Application ID: <code>eu.iwanus.plants</code> · Last updated: 8 October 2026</p>
+
+<p lang="en">Rośliny is a stock-intake tool for a plant shop or nursery. The owner photographs the EU plant passport and the plant, enters batch details, and the app stores them in a product database on the <strong>owner's own server</strong>, reachable only on the owner's local network or VPN. The app is intended for the shop operator.</p>
+
+<h2 lang="en">Data the app processes</h2>
+<ul lang="en">
+ <li><strong>Photos</strong> of the plant passport and the plant, taken with the camera or picked from the gallery by the user. They are downscaled on the phone and sent to the owner's server, where they are used to read the passport, identify the plant and as the product image in the shop.</li>
+ <li><strong>Batch details</strong> entered by the user: supplier, quantity, price, pot size, height, SKU, notes.</li>
+</ul>
+<p lang="en">Data goes only to the shop owner's server; reading, identification and description happen there. To look up a plant description the server sends <strong>only the botanical name and cultivar</strong> to public sources (GBIF, Wikipedia, search engines), never photos or batch data. Products the owner publishes (name, description, price, plant photo) may be shown in the owner's online shop; notes, supplier data and the passport photo are not published.</p>
+
+<h2 lang="en">Google ML Kit</h2>
+<p lang="en">To read the barcode or QR code on the passport, the app uses Google ML Kit (model bundled in the app, analysis runs on the phone). According to <a href="https://developers.google.com/ml-kit/android-data-disclosure">Google's documentation</a>, ML Kit sends diagnostic data to Google: device and app information, identifiers, performance metrics, API configuration and error codes. The data is encrypted (HTTPS) and, according to Google, not transferred to third parties. Photos are not sent to Google.</p>
+
+<h2 lang="en">What the app does not do</h2>
+<p lang="en">No ads, no developer analytics, no tracking. No location, contacts or Google account. No camera permission: photos are taken by the system camera app and the gallery uses the system photo picker.</p>
+
+<h2 lang="en">Retention and deletion</h2>
+<p lang="en">Data is stored on the shop owner's server. Any product and its photos can be deleted in the app (product card → Delete). On the phone the app keeps only temporary photo files in its cache, removed on uninstall.</p>
+
+<h2 lang="en">Security</h2>
+<p lang="en">The connection to the server is encrypted (HTTPS). The server is reachable only from the owner's local network and VPN.</p>
+
+<h2 lang="en">Children</h2>
+<p lang="en">The app is a tool for the shop operator and is not directed at children.</p>
+
+<h2 lang="en">Contact</h2>
+<p lang="en">JI ENGINEERING — <a href="mailto:engineering@iwanus.eu">engineering@iwanus.eu</a></p>
+</body>
+</html>
